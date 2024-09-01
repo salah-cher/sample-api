@@ -11,14 +11,14 @@ ENV PIP_NO_CACHE_DIR=off \
     POETRY_NO_INTERACTION=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    PYTHONPATH=/application/app/src
+    PYTHONPATH=/application/app/src \
+    PATH="$POETRY_HOME/bin:$PATH"
 
-# Install curl
+# Install curl and other dependencies
 RUN apt-get update && apt-get install -y curl
 
 # Install Poetry
-RUN curl -sSL https://install.python-poetry.org | python3 - \
-    && ln -s /root/.local/bin/poetry /usr/local/bin/poetry
+RUN curl -sSL https://install.python-poetry.org | python3 -
 
 # Set working directory
 WORKDIR /application
