@@ -17,8 +17,14 @@ ENV PIP_NO_CACHE_DIR=off \
 # Install curl and other dependencies
 RUN apt-get update && apt-get install -y curl build-essential libpq-dev
 
-# Install Poetry
-RUN curl -sSL https://install.python-poetry.org | python3 - --version 1.8.3 && poetry --version
+# Check Python version
+RUN python3 --version
+
+# Install Poetry using pip
+RUN pip install poetry==$POETRY_VERSION
+
+# Verify Poetry installation
+RUN echo $PATH && poetry --version
 
 # Set working directory
 WORKDIR /application
