@@ -15,10 +15,10 @@ ENV PIP_NO_CACHE_DIR=off \
     PATH="$POETRY_HOME/bin:$PATH"
 
 # Install curl and other dependencies
-RUN apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y curl build-essential libpq-dev
 
 # Install Poetry
-RUN curl -sSL https://install.python-poetry.org | python3 -
+RUN curl -sSL https://install.python-poetry.org | python3 - --version 1.8.3 && poetry --version
 
 # Set working directory
 WORKDIR /application
