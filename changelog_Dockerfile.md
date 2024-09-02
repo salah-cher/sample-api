@@ -19,4 +19,5 @@
 - **Working Directory**: Set `/application` as the working directory for the application.
 - **Project Files**: Copied all project files into the container.
 - **Dependencies**: Installed application dependencies using Poetry.
+- **Network**: Expose port 3000.
 - **Startup Command**: Set `CMD` to run `./start-local.sh` on container start.

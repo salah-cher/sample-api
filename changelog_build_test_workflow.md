@@ -28,12 +28,12 @@ To trigger and run the GitHub Actions workflow:
 
 The workflow was successfully run on: 
 
-- https://github.com/salah-cher/sample-api/actions/runs/10656428171
+- https://github.com/salah-cher/sample-api/actions/runs/10656428176
 
-- https://github.com/salah-cher/sample-api/actions/runs/10656428174
+- https://github.com/salah-cher/sample-api/actions/runs/10656428175
 
 More details can be found here:
 
-- https://github.com/salah-cher/sample-api/actions/runs/10656428174/job/29535060918
+- https://github.com/salah-cher/sample-api/actions/runs/10670936476/job/29575876399 
 
-- https://github.com/salah-cher/sample-api/actions/runs/10656428171/job/29535060942
+- https://github.com/salah-cher/sample-api/actions/runs/10670936475/job/29575876397
