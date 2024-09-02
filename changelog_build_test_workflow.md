@@ -13,9 +13,9 @@ To pull and run the Docker image from GitHub Container Registry (GHCR):
 
 2. **Run the Docker image:**
    ```bash
-   docker run -p 8000:8000 ghcr.io/salah-cher/sample-api:latest
+   docker run -p 3000:3000 ghcr.io/salah-cher/sample-api:latest
    ```
-   This command will run the Docker container on port 8000.
+   This command will run the Docker container on port 3000.
 
 #### 2. Instructions on How to Trigger and Run the Workflow
 
@@ -27,9 +27,13 @@ To trigger and run the GitHub Actions workflow:
 #### 3. Demonstration of a Successful Workflow Run
 
 The workflow was successfully run on: 
-https://github.com/salah-cher/sample-api/actions/runs/10654078353
-https://github.com/salah-cher/sample-api/actions/runs/10654078356
 
-more details can be found here: 
+- https://github.com/salah-cher/sample-api/actions/runs/10656428171
 
-https://github.com/salah-cher/sample-api/actions/runs/10654078353/job/29529942924
+- https://github.com/salah-cher/sample-api/actions/runs/10656428174
+
+More details can be found here:
+
+- https://github.com/salah-cher/sample-api/actions/runs/10656428174/job/29535060918
+
+- https://github.com/salah-cher/sample-api/actions/runs/10656428171/job/29535060942
