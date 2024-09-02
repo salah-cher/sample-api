@@ -32,4 +32,9 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ghcr.io/salah-cher/sample-api:latest
+          tags: |
+            ghcr.io/salah-cher/sample-api:latest
+            ghcr.io/salah-cher/sample-api:${{ github.run_id }}
+
+      - name: Output Docker Image Tag
+        run: echo "Docker image pushed with tag ${{ github.run_id }}"
