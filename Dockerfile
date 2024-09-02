@@ -1,5 +1,5 @@
 # Use the official Python image
-FROM python:3.12
+FROM python:3.12-slim
 
 # Set environment variables
 ENV PIP_NO_CACHE_DIR=off \
@@ -34,6 +34,9 @@ COPY . .
 
 # Install dependencies
 RUN poetry install
+
+# Expose port 3000
+EXPOSE 3000
 
 # Specify the command to run on container start
 CMD ["./start-local.sh"]
